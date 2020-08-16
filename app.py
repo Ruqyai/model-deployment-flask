@@ -1,7 +1,7 @@
 import flask
 from flask import Flask, request, render_template
-from sklearn.externals import joblib
 import numpy as np
+import joblib
 
 
 
@@ -32,5 +32,6 @@ def make_prediction():
 if __name__ == '__main__':
 	# load ml model
 	model = joblib.load('model.pkl')
+
 	# start api
-	app.run(host='0.0.0.0', port=8000, debug=True)
+	app.run(debug=True)
