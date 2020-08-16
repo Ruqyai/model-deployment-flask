@@ -2,7 +2,7 @@ import flask
 from flask import Flask, request, render_template
 import numpy as np
 import joblib
-import sklearn
+
 
 
 
@@ -31,8 +31,9 @@ def make_prediction():
 		prediction = model.predict([results,])
 		
 		label = np.squeeze(prediction)
+		label = np.round(label , 3)
 
-		return render_template('index.html', label=label)
+		return render_template('index.html', label=label+"  ريال  ")
 
 
 if __name__ == '__main__':
