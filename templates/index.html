@@ -1,0 +1,101 @@
+<html> 
+
+<head>
+<title> Flask API</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <h1>Prediction (Final Math Grades)</h1>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      
+<br>
+sex:
+<input type="number" name="input_example[]">
+<br>
+age:
+<input type="number" name="input_example[]">
+<br>
+famsize:
+<input type="number" name="input_example[]">
+<br>
+Medu:
+<input type="number" name="input_example[]">
+<br>
+Fedu':
+<input type="number" name="input_example[]">
+<br>
+Mjob:
+<input type="number" name="input_example[]">
+<br>
+Fjob:
+<input type="number" name="input_example[]">
+<br>
+traveltime:
+<input type="number" name="input_example[]">
+<br>
+studytime:
+<input type="number" name="input_example[]">
+<br>
+failures:
+<input type="number" name="input_example[]">
+<br>
+schoolsup:
+<input type="number" name="input_example[]">
+<br>
+famsup:
+<input type="number" name="input_example[]">
+<br>
+paid:
+<input type="number" name="input_example[]">
+<br>
+activities:
+<input type="number" name="input_example[]">
+<br>
+higher:
+<input type="number" name="input_example[]">
+<br>
+internet:
+<input type="number" name="input_example[]">
+<br>
+romantic:
+<input type="number" name="input_example[]">
+<br>
+famrel:
+<input type="number" name="input_example[]">
+<br>
+freetime:
+<input type="number" name="input_example[]">
+<br>
+goout:
+<input type="number" name="input_example[]">
+<br>
+Dalc:
+<input type="number" name="input_example[]">
+<br>
+Walc:
+<input type="number" name="input_example[]">
+<br>
+health:
+<input type="number" name="input_example[]">
+<br>
+absences:
+<input type="number" name="input_example[]">
+<br>
+G1:
+<input type="number" name="input_example[]">
+<br>
+G2:
+<input type="number" name="input_example[]">
+
+
+<br><br>
+      <input type="submit" value="Predict"> {% if label %} {{ label }} {% endif %}
+    </form>
+
+</body>
+
+</html>
