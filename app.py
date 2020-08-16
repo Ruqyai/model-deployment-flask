@@ -31,9 +31,8 @@ def make_prediction():
 		prediction = model.predict([results,])
 		
 		label = np.squeeze(prediction)
-		label = np.round(label , 3)
-
-		return render_template('index.html', label=label+"  ريال  ")
+		labell = np.round(label , 3)
+		return render_template('index.html', label='{} ريال '.format(labell))
 
 
 if __name__ == '__main__':
