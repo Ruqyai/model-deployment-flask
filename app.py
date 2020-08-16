@@ -29,7 +29,7 @@ def make_prediction():
 		
 		prediction = model.predict([results,])
 		
-		label = int(np.squeeze(prediction))
+		label = np.squeeze(prediction)
 
 		return render_template('index.html', label=label)
 
